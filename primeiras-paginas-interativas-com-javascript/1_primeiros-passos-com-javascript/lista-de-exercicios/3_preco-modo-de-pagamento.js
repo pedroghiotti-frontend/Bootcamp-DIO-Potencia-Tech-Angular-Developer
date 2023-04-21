@@ -62,15 +62,15 @@ let valorTotal;
 switch(formaPagamento)
 {
     case 1: // À vista no débito - 10% de desconto;
-        valorTotal = precoBase - ((10 / 100) * precoBase);
+        valorTotal = precoBase - ((10 / 100) * precoBase).
         break;
-    case 2: // À vista no dinheiro ou pix - 15% de desconto;
+    case 2: // À vista no dinheiro ou pix - 15% de desconto.
         valorTotal = precoBase - ((15 / 100) * precoBase);
         break;
     case 3: // Parcelado em duas vezes - Preço base, sem juros;
         valorTotal = precoBase;
         break;
-    case 4: // Parcelado acima de duas vezes - Preço base com juros de 10%;
+    case 4: // Parcelado acima de duas vezes - Preço base com juros de 10%.
         valorTotal = precoBase * (1 + (10/100))**parcelas;
         break;
 }
