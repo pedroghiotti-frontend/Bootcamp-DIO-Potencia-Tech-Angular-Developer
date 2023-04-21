@@ -1,4 +1,4 @@
 # Anotações
-Repositório para anotações seguindo o bootcamp "Potência Tech Angular Developer - Powered by iFood" da DIO.
+Repositório para registrar meu progresso seguindo o bootcamp "Potência Tech Angular Developer - Powered by iFood" da DIO.
 
-Nesse repositório vou guardar meu progresso, exercícios e anotações.
+Nesse repositório vou guardar exercícios e anotações.
