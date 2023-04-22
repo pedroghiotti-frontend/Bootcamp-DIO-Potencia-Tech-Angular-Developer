@@ -1,0 +1,50 @@
+/*
+    Listas
+*/
+
+// Declaração de um array.
+// Mais próximo do que eu conheço como uma List do que um array em si, por conta de tamanho mutável.
+// Pode segurar objetos de vários tipos.
+// Assim como em objetos literais, uma constante array pode ter seu conteúdo alterado mas não pode ser reatribuída.
+const lst = [3, 6, '10'];
+console.log(lst);
+
+// Consigo adicionar itens com 'push'.
+lst.push(9);
+console.log(lst);
+
+// E removê-los com 'splice'. (posição, # de elementos a partir dela)
+lst.splice(1, 1);
+console.log(lst);
+
+// Posso também substrituir elementos através desta mesma função.
+// Se selectionar mais de um elemento, ambos serão removidos e em seu lugar será adicionado o elemento dado.
+lst.splice(0, 2, 'Três');
+console.log(lst);
+
+// Para adicionar mais de um elemento ao substituir, devo adicionar mais valores separados por ','.
+// Um array será tratado adicionado como um objeto.
+lst.splice(0, 1, [1, 2, 3 ,4], 2, 3);
+console.log(lst);
+
+/*
+    Estruturas de repetição
+*/
+
+console.clear();
+
+const notas = [1, 5, 8, 10];
+let total = 0;
+let media;
+
+for (let i = 0; i < notas.length; i++)
+{
+    total += notas[i];    
+}
+
+media = total / notas.length;
+
+console.log(notas);
+console.log(notas.length);
+console.log(total);
+console.log(media);
