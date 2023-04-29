@@ -1,0 +1,20 @@
+{
+  "name": "bootcamp-dio-potencia-tech-angular-developer",
+  "version": "1.0.0",
+  "description": "Repositório para registrar meu progresso seguindo o bootcamp \"Potência Tech Angular Developer - Powered by iFood\" da DIO.\r Nesse repositório vou guardar exercícios e anotações.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node ./2_ganhando-produtividade-com-angular/2_typescript-para-angular/build/index.js",
+    "start:dev":"ts-node-dev --respawn --transpile-only ./2_ganhando-produtividade-com-angular/2_typescript-para-angular/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
