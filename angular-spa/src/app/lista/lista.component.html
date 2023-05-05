@@ -1,0 +1,43 @@
+<div>
+    <h1>Lista de compras:</h1>
+    <span>
+        <input 
+            type="text" 
+            [(ngModel)]="inputFieldContent"
+        >
+        <button 
+            (click)="add(inputFieldContent)"
+            (click)="inputFieldContent = ''"
+        > + </button>
+    </span>
+
+    <ul>
+        <li *ngFor="let item of items; let i = index"> 
+            <span [style.text-decoration]="item.checked == true ? 'line-through' : 'none'">
+                <input type="checkbox" [(ngModel)]="item.checked">
+                <p title="{{item.name}}">{{item.name}}</p>
+            </span>
+            
+            <span *ngIf="item.editing else display">
+                <button (click)="changeNumOfItemAtIndex(i, -1)"> < </button>
+                <input type="number" value="{{item.num}}" [(ngModel)]="item.num" [style.width.ch]="(''+item.num).length+1">
+                <button (click)="changeNumOfItemAtIndex(i, 1)"> > </button>
+                <button (click)="item.editing = false"> // </button>
+                <button (click)="removeAt(i)"> - </button>
+            </span>
+
+            <ng-template #display>
+                <span *ngIf="!item.checked else checked">
+                    <label for="editBtn">{{item.num}}</label>
+                    <button id="editBtn" (click)="item.editing = true"> // </button>
+                </span>
+                <ng-template #checked>
+                    <span [style.text-decoration]="'line-through'">
+                        <label>{{item.num}}</label>
+                    </span>
+                </ng-template>
+            </ng-template>
+        </li>
+    </ul>
+</div>
+
