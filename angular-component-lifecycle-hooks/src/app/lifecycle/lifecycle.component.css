@@ -1,0 +1,10 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-align: center;
+}
+li
+{
+    font-size: 2rem;
+    background-color: darkgray;
+}
